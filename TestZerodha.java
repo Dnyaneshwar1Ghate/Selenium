@@ -20,12 +20,10 @@ public class TestZerodha {
 		 
 
 		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-		driver.get("https://upstox.com/open-demat-account/?utm_source=google&utm_medium=cpc&utm_campaign=&utm_adgroup=&utm_term=upstox&utm_matchtype=e&utm_device=c&gad_source=1&gclid=CjwKCAjw9cCyBhBzEiwAJTUWNbeUgfVx9Ch5KLxfbj1iPbm-EbVAyrG3XLJEl4RePHp95XIYdg5eUhoCI9IQAvD_BwE");
+		
 		Thread.sleep(3000);
-
+		driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/main/div/div/div/div[3]/div/form/div/input")).sendKeys("8989038643");
 		Thread.sleep(3000);
-		//driver.findElement(By.xpath("//*[@id=\"app\"]/div[2]/main/div/div/div/div[3]/div/form/div/input")).sendKeys("8989038643");
-		//Thread.sleep(3000);
 		driver.findElement(By.xpath("//*[@id=\"mobileGroup\"]/div/input")).sendKeys("9767101438");
 		Thread.sleep(3000);	
 		driver.findElement(By.xpath("//*[@id=\"sendOtpButton\"]")).click();
