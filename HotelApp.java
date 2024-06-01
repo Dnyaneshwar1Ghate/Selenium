@@ -28,6 +28,8 @@ public class HotelApp{
 			System.out.println("Not Correct ");
 		}
 		driver.quit();
+
+		//close driver
 		
 	}
 }
